@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab1
+namespace OOP_Lab1_Remake
 {
     public class Rhomb : Rectangle, IFigure
     {
@@ -17,6 +17,11 @@ namespace OOP_Lab1
         override public void Draw()
         {
             Console.WriteLine($"Rhomb({X1},{X2},{Y1},{Y2})");
+        }
+
+        public override double GetSquare()
+        {
+            return 0.5 * Math.Abs((X2 - X1)) * ((Y2 - Y1));
         }
     }
 }

@@ -1,20 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace OOP_Lab1
+namespace OOP_Lab1_Remake
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Rectangle re = new Rectangle(11, -10, 10, 10);
+            Rectangle re = new Rectangle(3, 1, 2, 0);
 
             Rhomb rh = new Rhomb(2, 1, 1, 1);
 
-            Triangle tr = new Triangle(4, 4, 4, 4);
+            Triangle tr = new Triangle(5, 5, 4, 1, 2, 7);
 
             ListFigures list = new ListFigures();
 
@@ -26,7 +22,7 @@ namespace OOP_Lab1
             list.AddFigure(new Ellipse(10, 10, 10, 10));
 
             list.PrintFigures();
-            
+
             Console.ReadKey();
         }
     }

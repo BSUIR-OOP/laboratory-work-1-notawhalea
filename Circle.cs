@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab1
+namespace OOP_Lab1_Remake
 {
     public class Circle : IFigure
     {
@@ -21,9 +21,9 @@ namespace OOP_Lab1
             Console.WriteLine($"Circle({X},{Y},{R})");
         }
 
-        public double GetSquare()
+        virtual public double GetSquare()
         {
-            throw new NotImplementedException();
+            return Math.PI * R * R;
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab1
+namespace OOP_Lab1_Remake
 {
     class ListFigures
     {
@@ -12,7 +12,7 @@ namespace OOP_Lab1
 
         public ListFigures()
         {
-            figures = new List<IFigure>(); 
+            figures = new List<IFigure>();
         }
 
         public void AddFigure(IFigure figure)

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Lab1
+namespace OOP_Lab1_Remake
 {
     public class Square : Rectangle, IFigure
     {
@@ -16,6 +16,10 @@ namespace OOP_Lab1
         public override void Draw()
         {
             Console.WriteLine($"Square({X1},{X2},{Y1},{Y2})");
+        }
+        public override double GetSquare()
+        {
+            return base.GetSquare();
         }
     }
 }
